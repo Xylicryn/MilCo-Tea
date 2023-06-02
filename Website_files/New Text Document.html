@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MilCo</title>
+  <style>
+    /* Other styles */
+
+    /* Fixed footer button */
+    .fixed-footer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+
+    .fixed-footer button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid crimson;
+      color: crimson;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      cursor: pointer;
+      outline: none;
+      transition: transform 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .fixed-footer button:hover {
+      transform: scale(1.1);
+      color: #e9e9e9;
+    }
+
+    .fixed-footer button:active {
+      border-color: crimson;
+      background-color: rgba(220, 20, 60, 0.1);
+    }
+  </style>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Other content -->
+
+  <!-- Music file -->
+  <audio id="music" src="SpaceWalk.ogg"></audio>
+
+  <!-- Fixed footer button -->
+  <div class="fixed-footer">
+    <button id="playButton" onclick="togglePlay()"><i class="fas fa-music"></i></button>
+  </div>
+
+  <!-- Other scripts -->
+
+  <script>
+    var music = document.getElementById("music");
+    var playButton = document.getElementById("playButton");
+
+    function togglePlay() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>

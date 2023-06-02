@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/ADMIN/Desktop/Website/Website.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./Website_files/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+	<title>MilCo Shop</title>
+<style type="text/css" id="operaUserStyle"></style></head>
+    
+<body id="top">
+   
+	<header class="fixed-header">
+	<nav class="nav-bar">
+		<div class="title-container">
+			<h1 class="title">Mil<span>Co</span></h1>
+			<p class="shop-text" style="
+    margin-left: 40px;
+">MilCo Shop</p>
+		</div>
+		<ul class="menu">
+			<li><a href="#top" class="active">HOME</a></li>
+			<li><a href="#products" class="">PRODUCTS</a></li>
+			<li><a href="#services" class="">OUR SERVICES</a></li>
+			<li><a href="#contact" class="">CONTACT US</a></li>
+			<li><a href="#about" class="">ABOUT US</a></li>
+		</ul>
+	</nav>
+        
+</header>
+    
+	<main>
+        <audio id="music" loop="" src="SpaceWalk.ogg"></audio>
+
+  <!-- Fixed footer button -->
+  <div class="fixed-footer">
+    <button id="playButton" onclick="togglePlay()"><i class="fas fa-music"></i></button>
+  </div>
+
+  <!-- Other scripts -->
+
+  <script>
+    var music = document.getElementById("music");
+    var playButton = document.getElementById("playButton");
+
+    function togglePlay() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+	<section id="home" class="hero" style="padding-top: 130px;margin-top: 0px;padding-bottom: 800px;">
+    
+			<div class="wrapper">
+                <div class="left-section">
+				<h1 class="title-1" style="
+    margin-top: 100px;
+">Good <span>Tea</span> will always find the audience</h1>
+				<p style="
+    margin-left: 20px;
+">We provide a variety of unique and best tea</p>
+                
+				<button type="button" onclick="scrollToProducts()">Shop Now</button>
+
+<script>
+function scrollToProducts() {
+  const productsSection = document.getElementById('products');
+  productsSection.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+                </div>
+                <!----------------------------->
+                <div class="right-section">
+       <h1 class="best-sellers" style="
+    margin-top: 0px;
+    padding-bottom: 10px;
+">BEST SELLERS</h1>
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img src="./Website_files/Cappuccino.png" alt="Cappuccino">
+      <div class="slide-name" style=" color: lemonchiffon;">Cappuccino</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/chocolatecoffee.png" alt="Chocolate Coffee">
+      <div class="slide-name" style=" color: lemonchiffon;">Chocolate Coffee</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/CaramelMacchiato.png" alt="Caramel Macchiato">
+      <div class="slide-name" style=" color: lemonchiffon;">Caramel Macchiato</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/DalgonaCoffee.png" alt="Dalgona Coffee">
+      <div class="slide-name" style=" color: lemonchiffon;">Dalgona Coffee</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/TaroMilktea.png" alt="Taro Milk Tea">
+      <div class="slide-name" style=" color: lemonchiffon;">Taro Milk Tea</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/OreoMilktea.png" alt="Oreo Milk Tea">
+      <div class="slide-name" style=" color: lemonchiffon;">Oreo Milk Tea</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/StrawberryCheesecakeMilktea.png" alt="Strawberry Cheesecake Milk Tea">
+      <div class="slide-name" style=" color: lemonchiffon;">Strawberry Cheesecake Milk Tea</div>
+    </div>
+    <div class="slide">
+      <img src="./Website_files/MatchaMilktea.png" alt="Matcha Milk Tea">
+      <div class="slide-name" style=" color: lemonchiffon;">Matcha Milk Tea</div>
+    </div>
+
+    <i class="slide-button previous fas fa-chevron-left" onclick="changeSlide(-1)" style="margin-left: 10px;margin-top: 250px;"></i>
+    <i class="slide-button next fas fa-chevron-right" onclick="changeSlide(1)" style=" margin-top: 250px; margin-right: 10px;"></i>
+    </div>
+			</div>
+        </div>
+         <script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName('slide');
+    var slideButtons = document.getElementsByClassName('slide-button');
+
+    function showSlide(n) {
+      slides[slideIndex].classList.remove('active');
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      slides[slideIndex].classList.add('active');
+    }
+
+    function changeSlide(n) {
+      showSlide(n);
+    }
+
+    // Change slide every 3 seconds
+    setInterval(function() {
+      changeSlide(1);
+    }, 5000);
+  </script>
+        </section>
+       
+	<section id="products" class="section center-content" style="
+    padding-top: 60px;
+    padding-bottom: 600px;
+">
+  <div class="container">
+    <h2 class="section-title" style="color: #fff; font-size: 50px; font-weight: 600;">Coffee</h2>
+    <p class="section-description" style="color: lemonchiffon;font-size: 25px;padding-top: 10px;margin-left: 250px;margin-right: 250px;margin-bottom: 0px; text-align: justify;">
+      Our coffee can enhance brain function, improve memory, and elevate mood. Our coffee toppings include honey, chocolate chips, cocoa powder, nutella, cinnamon, whipped cream, ice cream, and marshmallows.
+    </p>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;font-weight: 600;padding-left: 50px;">Cappuccino</h3>
+        <img src="./Website_files/Cappuccino.png" alt="Cappuccino" style="width: 350px;border-radius: 20px;border-top-width: 20px;margin-top: 20px;margin-left: 200px;margin-right: 150px;cursor: pointer;">
+        <button type="button" class="product-price" style="color: #fff;margin-left: 50px;">PHP 120</button>
+      </div>
+      <div class="grid-item" style="
+    margin-left: 150px;
+    margin-right: 200px;
+">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;">Chocolate Coffee</h3>
+        <img src="./Website_files/chocolatecoffee.png" alt="Chocolate Coffee" style="width: 350px;padding-top: 0px;border-radius: 20px;margin-top: 20px;cursor: pointer;">
+        <button type="button" class="product-price" style="color: #fff;margin-left: 20px;">PHP 140</button>
+      </div>
+      <div class="grid-item">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;font-weight: 600;margin-top: 50px;margin-left: 50px;">Caramel Macchiato</h3>
+        <img src="./Website_files/CaramelMacchiato.png" alt="Caramel Macchiato" style="width: 350px;border-radius: 20px;margin-left: 200px;margin-right: 150px;cursor: pointer;margin-top: 20px;">
+        <button type="button" class="product-price" style="color: #fff;margin-left: 50px;">PHP 150</button>
+      </div>
+      <div class="grid-item">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;font-weight: 600;margin-right: 40px;margin-top: 50px;">Dalgona Coffee</h3>
+        <img src="./Website_files/DalgonaCoffee.png" alt="Dalgona Coffee" style="width: 350px;padding-top: 0px;border-radius: 20px;margin-top: 20px;margin-left: 150px;margin-right: 200px;cursor: pointer;">
+        <button type="button" class="product-price" style="color: #fff;margin-right: 60px;">PHP 130</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="section-title" style="
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 600px;
+">Milk Tea</h2>
+    <p class="section-description" style="
+    color: lemonchiffon;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: justify;
+">Our milk tea contains caffeine, which refreshes the body, although only in trace amounts. Our milk tea comes in a variety of flavors and toppings, including egg pudding, ice cream, whipped cream, crushed cookies, chocolate chip, and chocolate malt.</p>
+   <div class="grid-container">
+      <div class="grid-item">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;font-weight: 600;padding-left: 50px;">Taro Milktea</h3>
+        <img src="./Website_files/TaroMilktea.png" alt="Cappuccino" style="width: 350px;border-radius: 20px;border-top-width: 20px;margin-top: 20px;margin-left: 200px;margin-right: 150px;cursor: pointer;">
+        <button type="button" class="product-price" style="color: #fff;margin-left: 50px;">PHP 110</button>
+      </div>
+      <div class="grid-item" style="
+    margin-left: 150px;
+    margin-right: 200px;
+">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;">Orea Milktea</h3>
+        <img src="./Website_files/OreoMilktea.png" alt="Chocolate Coffee" style="width: 350px;padding-top: 0px;border-radius: 20px;margin-top: 20px;cursor: pointer;">
+        <button type="button" class="product-price" style="color: #fff;margin-left: 20px;">PHP 130</button>
+      </div>
+      <div class="grid-item">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;font-weight: 600;margin-top: 50px;margin-left: 50px;">Strawberry Cheesecake Milktea</h3>
+        <img src="./Website_files/StrawberryCheesecakeMilktea.png" alt="Caramel Macchiato" style="width: 350px;border-radius: 20px;margin-left: 200px;margin-right: 150px;cursor: pointer;margin-top: 20px;">
+        <button type="button" class="product-price" style="color: #fff;margin-left: 50px;">PHP 140</button>
+      </div>
+      <div class="grid-item">
+        <h3 class="product-title" style="color: #fff;font-size: 30px;font-weight: 600;margin-right: 40px;margin-top: 50px;">Matcha Milktea</h3>
+        <img src="./Website_files/MatchaMilktea.png" alt="Dalgona Coffee" style="width: 350px;padding-top: 0px;border-radius: 20px;margin-top: 20px;margin-left: 150px;margin-right: 200px;cursor: pointer;">
+        <button type="button" class="product-price" style="color: #fff;margin-right: 60px;">PHP 140</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+	<section id="services" class="section" style="
+    padding-top: 60px;
+">
+		 <div class="container center-content">
+			<h2 class="section-title" style="color: #fff; font-size: 40px; font-weight: 600; padding-top: 40px;" >Our Services</h2>
+             <p class="section-description" style="
+    color: lemonchiffon;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+    padding-bottom: 100px;
+">We provide best quality tea</p>
+			 <div class="container3x1">
+    <div class="photo">
+      <img src="./Website_files/s1.png" alt="Photo 1" style="width: 170px;border-radius: 20px;padding-left: 25px; margin-bottom: 20px;">
+      <h3 style="color: white; margin-bottom: 10px;">Order</h3>
+      <p style="margin-left: 100px;
+    margin-right: 100px;
+    color: lemonchiffon; font-weight: 600;">Ordering your favorites has never been this easy. Enjoy App Exclusive deals only on the MilCo Tea App.</p>
+    </div>
+    <div class="photo">
+      <img src="./Website_files/s2.png" alt="Photo 2" style="width: 150px; border-radius: 20px; margin-bottom: 20px;">
+      <h3 style="color: white; margin-bottom: 10px;">Shipping</h3>
+      <p style="margin-left: 100px;
+    margin-right: 100px;
+    color: lemonchiffon; font-weight: 600;">Wait 20-30 mins to deliver your order.</p>
+    </div>
+    <div class="photo">
+      <img src="./Website_files/s3.png" alt="Photo 3" style="width: 150px; border-radius: 20px; margin-bottom: 20px;">
+      <h3 style="color: white; margin-bottom: 10px;">Delivered</h3>
+      <p style="margin-left: 100px;
+    margin-right: 100px;
+    color: lemonchiffon; font-weight: 600;">Tadaaa! Your order has been delivered. Enjoy and don’t forget to rate us.</p>
+    </div>
+  </div>
+		</div>
+	</section>
+	<section id="contact" class="section">
+		 <div class="container center-content">
+			<h2 class="section-title" style="color: #fff; font-size: 40px; font-weight: 600; padding-top: 40px; padding-bottom: 20px; padding-top: 190px" >Contact Us</h2>
+            
+			 <div class="container3x1">
+    <div class="photo">
+      <img src="./Website_files/c1.png" alt="Photo 1" style="width: 170px;border-radius: 20px; margin-bottom: 20px; cursor: pointer;">
+      <h3 style="color: white; margin-bottom: 10px;">MilCo Tea</h3>
+      
+    </div>
+    <div class="photo">
+      <img src="./Website_files/c2.png" alt="Photo 2" style="width: 150px; border-radius: 20px; margin-bottom: 20px; cursor: pointer;">
+      <h3 style="color: white; margin-bottom: 10px;">MilCo Tea</h3>
+      
+    </div>
+    <div class="photo">
+      <img src="./Website_files/c3.png" alt="Photo 3" style="width: 150px; border-radius: 20px; margin-bottom: 20px; cursor: pointer;">
+      <h3 style="color: white; margin-bottom: 10px;">milcotea@gmail.com</h3>
+      
+    </div>
+  </div>
+		</div>
+	</section>
+	<section id="about" class="section">
+		 <div class="container center-content">
+             
+			<h2 class="section-title" style="color: #fff; font-size: 40px; font-weight: 600; padding-top: 40px; padding-top: 60px" >About Us</h2>
+			<p class="section-description" style="
+    color: lemonchiffon;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    padding-bottom: 20px;
+">MilCo tea is a food service company established in 2023, specializing in healthy milk tea. The concept is inspired mainly by Asia’s unique culture of tea drinking – which in many Asian countries, is an important part of a ceremony in entertaining customers, that reflects a sign of respect and value for the guests.</p>
+             <p class="section-description" style="
+    color: lemonchiffon;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+">MilCo tea drinks are guaranteed made from 100% freshly brewed loose-leaf teas of high quality, made exciting by different flavors and mixes for a fun and healthier lifestyle.</p>
+             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ZzFDmlDXBxc?mute=1&loop=1&controls=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <script>
+    function handleIntersection(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const video = document.getElementById('video');
+          video.src += '&autoplay=1';
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const videoObserver = new IntersectionObserver(handleIntersection, options);
+    const videoElement = document.getElementById('video');
+    videoObserver.observe(videoElement);
+  </script>
+		</div>
+	</section>
+</main>
+	<footer>
+			<section class="footer-content">
+				<div class="container" style="height: 60px;">
+					<p style="color: white">© 2023 MilCo. All rights reserved. | Website by MilCo</p>
+				</div>
+			</section>
+	</footer>
+
+	<script>
+		window.addEventListener('scroll', function() {
+		  var header = document.querySelector('header');
+		  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		  if (scrollTop > 0) {
+		    header.classList.add('fixed-header');
+		  } else {
+		    header.classList.remove('fixed-header');
+		  }
+		});
+
+		document.addEventListener('DOMContentLoaded', function() {
+			const menuItems = document.querySelectorAll('.menu li a');
+
+			menuItems.forEach(function(item) {
+				item.addEventListener('click', function(e) {
+					e.preventDefault();
+					const targetSection = document.querySelector(item.getAttribute('href'));
+					window.scrollTo({
+						top: targetSection.offsetTop - 80,
+						behavior: 'smooth'
+					});
+
+					menuItems.forEach(function(menuItem) {
+						menuItem.classList.remove('active');
+					});
+
+					item.classList.add('active');
+				});
+			});
+		});
+	</script>
+ 
+
+</body></html>
