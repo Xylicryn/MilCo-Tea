@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)file:///C:/Users/ADMIN/Desktop/Website/Website.html -->
+
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,13 +33,6 @@
 	<main>
         <audio id="music" loop="" src="SpaceWalk.ogg"></audio>
 
-  <!-- Fixed footer button -->
-  <div class="fixed-footer">
-    <button id="playButton" onclick="togglePlay()"><i class="fas fa-music"></i></button>
-  </div>
-
-  <!-- Other scripts -->
-
   <script>
     var music = document.getElementById("music");
     var playButton = document.getElementById("playButton");
@@ -52,92 +45,156 @@
       }
     }
   </script>
+        
+        
 	<section id="home" class="hero" style="padding-top: 130px;margin-top: 0px;padding-bottom: 800px;">
-    
-			<div class="wrapper">
-                <div class="left-section">
-				<h1 class="title-1" style="
-    margin-top: 100px;
-">Good <span>Tea</span> will always find the audience</h1>
-				<p style="
-    margin-left: 20px;
-">We provide a variety of unique and best tea</p>
-                
-				<button type="button" onclick="scrollToProducts()">Order Now</button>
+	<div class="wrapper">
+        <div class="left-section">
+			<h1 class="title-1" style="margin-top: 100px;">Good <span>Tea</span> will always find the audience</h1>
+			<p style="margin-left: 20px;">We provide a variety of unique and best tea</p>
 
-<script>
-function scrollToProducts() {
-  const productsSection = document.getElementById('products');
-  productsSection.scrollIntoView({ behavior: 'smooth' });
-}
-</script>
-                </div>
-                <!----------------------------->
-                <div class="right-section">
-       <h1 class="best-sellers" style="
-    margin-top: 0px;
-    padding-bottom: 10px;
-">BEST SELLERS</h1>
-  <div class="slideshow-container">
-    <div class="slide active">
-      <img src="./Website_files/Cappuccino.png" alt="Cappuccino">
-      <div class="slide-name" style=" color: lemonchiffon;">Cappuccino</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/chocolatecoffee.png" alt="Chocolate Coffee">
-      <div class="slide-name" style=" color: lemonchiffon;">Chocolate Coffee</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/CaramelMacchiato.png" alt="Caramel Macchiato">
-      <div class="slide-name" style=" color: lemonchiffon;">Caramel Macchiato</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/DalgonaCoffee.png" alt="Dalgona Coffee">
-      <div class="slide-name" style=" color: lemonchiffon;">Dalgona Coffee</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/TaroMilktea.png" alt="Taro Milk Tea">
-      <div class="slide-name" style=" color: lemonchiffon;">Taro Milk Tea</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/OreoMilktea.png" alt="Oreo Milk Tea">
-      <div class="slide-name" style=" color: lemonchiffon;">Oreo Milk Tea</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/StrawberryCheesecakeMilktea.png" alt="Strawberry Cheesecake Milk Tea">
-      <div class="slide-name" style=" color: lemonchiffon;">Strawberry Cheesecake Milk Tea</div>
-    </div>
-    <div class="slide">
-      <img src="./Website_files/MatchaMilktea.png" alt="Matcha Milk Tea">
-      <div class="slide-name" style=" color: lemonchiffon;">Matcha Milk Tea</div>
-    </div>
+			<button type="button" onclick="openSignUpPopup()">Sign Up</button>
+		</div>
+		<!----------------------------->
+		<div class="right-section">
+			<h1 class="best-sellers" style="margin-top: 0px;padding-bottom: 10px;">BEST SELLERS</h1>
+			<div class="slideshow-container">
+				<div class="slide active">
+					<img src="./Website_files/Cappuccino.png" alt="Cappuccino">
+					<div class="slide-name" style="color: lemonchiffon;">Cappuccino</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/chocolatecoffee.png" alt="Chocolate Coffee">
+					<div class="slide-name" style="color: lemonchiffon;">Chocolate Coffee</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/CaramelMacchiato.png" alt="Caramel Macchiato">
+					<div class="slide-name" style="color: lemonchiffon;">Caramel Macchiato</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/DalgonaCoffee.png" alt="Dalgona Coffee">
+					<div class="slide-name" style="color: lemonchiffon;">Dalgona Coffee</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/TaroMilktea.png" alt="Taro Milk Tea">
+					<div class="slide-name" style="color: lemonchiffon;">Taro Milk Tea</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/OreoMilktea.png" alt="Oreo Milk Tea">
+					<div class="slide-name" style="color: lemonchiffon;">Oreo Milk Tea</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/StrawberryCheesecakeMilktea.png" alt="Strawberry Cheesecake Milk Tea">
+					<div class="slide-name" style="color: lemonchiffon;">Strawberry Cheesecake Milk Tea</div>
+				</div>
+				<div class="slide">
+					<img src="./Website_files/MatchaMilktea.png" alt="Matcha Milk Tea">
+					<div class="slide-name" style="color: lemonchiffon;">Matcha Milk Tea</div>
+				</div>
 
-    <i class="slide-button previous fas fa-chevron-left" onclick="changeSlide(-1)" style="margin-left: 10px;margin-top: 250px;"></i>
-    <i class="slide-button next fas fa-chevron-right" onclick="changeSlide(1)" style=" margin-top: 250px; margin-right: 10px;"></i>
-    </div>
+				<i class="slide-button previous fas fa-chevron-left" onclick="changeSlide(-1)" style="margin-left: 10px;margin-top: 250px;"></i>
+				<i class="slide-button next fas fa-chevron-right" onclick="changeSlide(1)" style="margin-top: 250px; margin-right: 10px;"></i>
 			</div>
-        </div>
-         <script>
-    var slideIndex = 0;
-    var slides = document.getElementsByClassName('slide');
-    var slideButtons = document.getElementsByClassName('slide-button');
+		</div>
+	</div>
 
-    function showSlide(n) {
-      slides[slideIndex].classList.remove('active');
-      slideIndex = (slideIndex + n + slides.length) % slides.length;
-      slides[slideIndex].classList.add('active');
-    }
+	<script>
+	var slideIndex = 0;
+	var slides = document.getElementsByClassName('slide');
+	var slideButtons = document.getElementsByClassName('slide-button');
 
-    function changeSlide(n) {
-      showSlide(n);
-    }
+	function showSlide(n) {
+		slides[slideIndex].classList.remove('active');
+		slideIndex = (slideIndex + n + slides.length) % slides.length;
+		slides[slideIndex].classList.add('active');
+	}
 
-    // Change slide every 3 seconds
-    setInterval(function() {
-      changeSlide(1);
-    }, 5000);
-  </script>
-        </section>
+	function changeSlide(n) {
+		showSlide(n);
+	}
+
+	
+	setInterval(function() {
+		changeSlide(1);
+	}, 5000);
+	</script>
+
+
+	<div id="signup-popup" class="popup-container" style="border-radius: 20px;background: #532608f7;">
+    <h1 class="title" style="
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+">Mil<span>Co</span></h1>
+		<form class="signup-form" action="/signup" method="post">
+			<label for="username" style="color: wheat;">Username:</label>
+			<input type="text" id="username" name="username" required="" style="
+    margin-bottom: 10px;
+">
+			<label for="password" style="
+    color: wheat;
+    margin-left: 3px;
+">Password:</label>
+			<input type="password" id="password" name="password" required="" style="
+    margin-left: 0px;
+">
+			<input type="submit" value="Submit" style="
+    margin-left: 98.483;
+    margin-right: 100px;
+    margin-top: 20px;
+    color: #fff;
+    background: brown;
+    font-size: 20px;
+    border: crimson;
+    border-radius: 50px;
+    /* transition: 0.4s ease; */
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-left: 90px;
+">
+		</form>
+	</div>
+
+	<script>
+  function openSignUpPopup() {
+    var signupPopup = document.getElementById('signup-popup');
+    signupPopup.style.display = 'block';
+  }
+
+  
+  document.querySelector('.signup-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var signupPopup = document.getElementById('signup-popup');
+    signupPopup.style.display = 'none';
+
+    
+    var signupButton = document.querySelector('button');
+    signupButton.innerText = 'Order Now';
+    signupButton.onclick = function() {
+      scrollToProducts();
+      playMusic();
+    };
+  });
+
+  function scrollToProducts() {
+    const productsSection = document.getElementById('products');
+    productsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  var music = document.getElementById("music");
+  var playButton = document.getElementById("playButton");
+
+  function playMusic() {
+    music.play();
+  }
+</script>
+
+
+</section>
        
 	<section id="products" class="section center-content" style="
     padding-top: 60px;
@@ -369,6 +426,8 @@ function scrollToProducts() {
 			});
 		});
 	</script>
- 
+   <div class="fixed-footer">
+    <button id="playButton" onclick="togglePlay()"><i class="fas fa-music"></i></button>
+  </div>
 
 </body></html>
